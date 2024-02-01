@@ -1,0 +1,2446 @@
+/*======================================================================*
+* Desarrollo CIPM - Aktien.mx
+* Copyright 2024
+*======================================================================*/
+/*======================================================================*
+Nucleo //
+*======================================================================*/
+/*======================================================================*
+    _variables
+*======================================================================*/
+/*======================================================================*
+    Mixing Media Query
+*======================================================================*/
+/*======================================================================*
+    Mixing Media Query Personalizado
+*======================================================================*/
+/*======================================================================*
+    Mixing Georgia Font
+*======================================================================*/
+/*======================================================================*
+    Mixing Georgia Font
+*======================================================================*/
+/*=========================================================================
+    _variables CSS
+*=========================================================================*/
+:root {
+  --white:#ffffff;
+  --black:#000000;
+  --dark-blue-corporativo:#26314D;
+  --light-blue-corporativo: #005198;
+  --green-corporativo: #26B105;
+  --dark-gray-texto: #000000E5;
+  --light-blue-texto: #ABC5DD;
+  --light-gray-texto: #7C8294;
+  --light-blue-background: #EEF1F6;
+}
+
+/*=========================================================================
+    _nucleo
+*=========================================================================*/
+.noPadding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.noMargin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+/*======================================================================*
+Secciones Generales //
+*======================================================================*/
+/*======================================================================*
+    _variables
+*======================================================================*/
+/*======================================================================*
+    Mixing Media Query
+*======================================================================*/
+/*======================================================================*
+    Mixing Media Query Personalizado
+*======================================================================*/
+/*======================================================================*
+    Mixing Georgia Font
+*======================================================================*/
+/*======================================================================*
+    Mixing Georgia Font
+*======================================================================*/
+/*======================================================================*
+    _home - @media (min-width: 320px){}
+*======================================================================*/
+/*======================================================================*
+    _variables
+*======================================================================*/
+/*======================================================================*
+    Mixing Media Query
+*======================================================================*/
+/*======================================================================*
+    Mixing Media Query Personalizado
+*======================================================================*/
+/*======================================================================*
+    Mixing Georgia Font
+*======================================================================*/
+/*======================================================================*
+    Mixing Georgia Font
+*======================================================================*/
+.transitionSlow, .books .books-inner .sidebarBooks .element-block-sidebar .items-block-sidebar ul li a::before, .books .books-inner .sidebarBooks .element-block-sidebar .items-block-sidebar ul li a, .books .books-inner .sidebar-btn-open {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.scrollStyle::-webkit-scrollbar, .books .books-inner .sidebarBooks.open::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollStyle::-webkit-scrollbar-track, .books .books-inner .sidebarBooks.open::-webkit-scrollbar-track {
+  background-color: #26314D;
+}
+.scrollStyle::-webkit-scrollbar-thumb, .books .books-inner .sidebarBooks.open::-webkit-scrollbar-thumb {
+  background-color: #005198;
+  border: 1px solid #005198;
+  border-radius: 0px;
+}
+@media (min-width: 768px) {
+  .scrollStyle::-webkit-scrollbar, .books .books-inner .sidebarBooks.open::-webkit-scrollbar {
+    width: 3px;
+  }
+}
+
+.books .books-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media (min-width: 1200px) {
+  .books .books-inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
+  }
+}
+.books .books-inner .sidebar-btn-open {
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.books .books-inner .sidebar-btn-open a {
+  color: #ffffff;
+  background-color: #005198;
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* min-width: 240px; */
+  width: 100%;
+  gap: 12px;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+.books .books-inner .sidebar-btn-open a .icon-btn-sidebar {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.books .books-inner .sidebar-btn-open a .icon-btn-sidebar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+}
+.books .books-inner .sidebar-btn-open a .icon-btn-sidebar img.blue {
+  opacity: 0;
+}
+.books .books-inner .sidebar-btn-open a .icon-btn-sidebar img.white {
+  opacity: 1;
+}
+.books .books-inner .sidebar-btn-open a span {
+  /* position: relative;
+  width: 100%; */
+}
+.books .books-inner .sidebar-btn-open a:hover {
+  background-color: #ffffff;
+  color: #005198;
+  border: 1px solid #005198;
+}
+.books .books-inner .sidebar-btn-open a:hover img.blue {
+  opacity: 1;
+}
+.books .books-inner .sidebar-btn-open a:hover img.white {
+  opacity: 0;
+}
+@media (min-width: 1200px) {
+  .books .books-inner .sidebar-btn-open {
+    display: none;
+  }
+}
+.books .books-inner .sidebarBooks.open {
+  left: 0;
+  overflow-y: scroll;
+}
+@media (min-width: 1200px) {
+  .books .books-inner .sidebarBooks.open {
+    overflow-y: auto;
+  }
+}
+.books .books-inner .sidebarBooks {
+  width: 100%;
+  background-color: rgb(238, 241, 246);
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(238, 241, 246)), color-stop(41%, rgb(241, 244, 248)), to(rgb(255, 255, 255)));
+  background: linear-gradient(left top, rgb(238, 241, 246) 0%, rgb(241, 244, 248) 41%, rgb(255, 255, 255) 100%);
+  padding: 15px;
+}
+@media (min-width: 320px) {
+  .books .books-inner .sidebarBooks {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    height: 100vh;
+    z-index: 1000;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+}
+@media (min-width: 1200px) {
+  .books .books-inner .sidebarBooks {
+    width: 24%;
+    position: relative;
+    height: auto;
+    z-index: auto;
+    left: auto;
+    top: auto;
+  }
+}
+.books .books-inner .sidebarBooks .sidebar-btn-close {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 15px 0px;
+  background-color: transparent;
+}
+.books .books-inner .sidebarBooks .sidebar-btn-close a {
+  background-color: #005198;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.262745098);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.262745098);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.books .books-inner .sidebarBooks .sidebar-btn-close img {
+  width: 22px;
+}
+@media (min-width: 1200px) {
+  .books .books-inner .sidebarBooks .sidebar-btn-close {
+    display: none;
+  }
+}
+.books .books-inner .sidebarBooks .element-block-sidebar .tittle-block {
+  padding: 34px 10px 22px;
+  border-left: 1px solid #B7CCE1;
+  color: #26314D;
+}
+.books .books-inner .sidebarBooks .element-block-sidebar .tittle-block h4 {
+  font-family: "Georgia", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  margin-bottom: 0px;
+}
+.books .books-inner .sidebarBooks .element-block-sidebar .items-block-sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.books .books-inner .sidebarBooks .element-block-sidebar .items-block-sidebar ul li a {
+  border: 1px solid #B7CCE1;
+  text-decoration: none;
+  background-color: transparent;
+  display: block;
+  padding: 15px 20px;
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #005198;
+  position: relative;
+}
+.books .books-inner .sidebarBooks .element-block-sidebar .items-block-sidebar ul li a::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: #B7CCE1;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.books .books-inner .sidebarBooks .element-block-sidebar .items-block-sidebar ul li a:hover {
+  background-color: #005198;
+  color: #ffffff;
+}
+.books .books-inner .sidebarBooks .element-block-sidebar .items-block-sidebar ul li a:hover::before {
+  background-color: #005198;
+}
+.books .books-inner .sidebarBooks .element-block-sidebar .items-block-sidebar ul li .active {
+  background-color: #005198;
+  color: #ffffff;
+}
+.books .books-inner .sidebarBooks .element-block-sidebar .items-block-sidebar ul li .active::before {
+  background-color: #005198;
+}
+.books .books-inner .sidebarBooks .element-block-sidebar .description-sidebar {
+  color: #005198;
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  border-left: 1px solid #B7CCE1;
+  padding: 10px 0px 40px 10px;
+}
+.books .books-inner .sidebarBooks .element-block-sidebar .description-sidebar p, .books .books-inner .sidebarBooks .element-block-sidebar .description-sidebar span {
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+.books .books-inner .sidebarBooks .element-block-sidebar .description-sidebar h1, .books .books-inner .sidebarBooks .element-block-sidebar .description-sidebar h2, .books .books-inner .sidebarBooks .element-block-sidebar .description-sidebar h3, .books .books-inner .sidebarBooks .element-block-sidebar .description-sidebar h4, .books .books-inner .sidebarBooks .element-block-sidebar .description-sidebar h5, .books .books-inner .sidebarBooks .element-block-sidebar .description-sidebar h6 {
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+.books .books-inner .contentBooks {
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .books .books-inner .contentBooks {
+    width: 76%;
+  }
+}
+.books .books-inner .sidebarBooks .element-block-sidebar:nth-child(2) .tittle-block {
+  padding: 12px 10px 22px;
+}
+
+.book-item {
+  -webkit-box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.062745098);
+          box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.062745098);
+  padding-bottom: 16px;
+  margin-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  .book-item {
+    margin-bottom: 24px;
+  }
+}
+.book-item .bookItem-image {
+  width: 100%;
+}
+.book-item .bookItem-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.book-item .bookItem-info-wrap {
+  padding: 12px 15px 5px;
+}
+.book-item .bookItem-info-wrap .bookItem-title {
+  color: #26314D;
+}
+.book-item .bookItem-info-wrap .bookItem-title h1, .book-item .bookItem-info-wrap .bookItem-title h2, .book-item .bookItem-info-wrap .bookItem-title h3, .book-item .bookItem-info-wrap .bookItem-title h4, .book-item .bookItem-info-wrap .bookItem-title h5, .book-item .bookItem-info-wrap .bookItem-title h6 {
+  font-family: "Georgia", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+.book-item .bookItem-info-wrap .bookItem-author {
+  color: #838383;
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+.book-item .bookItem-info-wrap .bookItem-author p, .book-item .bookItem-info-wrap .bookItem-author span {
+  margin-bottom: 7px;
+}
+.book-item .bookItem-info-wrap .bookItem-editor {
+  color: #AAAAAA;
+  font-family: "SF-Pro-Italic", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+.book-item .bookItem-info-wrap .bookItem-cover {
+  color: #005198;
+  font-family: "SF-Pro-Bold", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+.book-item .bookItem-info-wrap .bookItem-price {
+  color: #005198;
+  font-family: "SF-Pro-Bold", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 28px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+.book-item .bookItem-info-wrap .bookItem-price p {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.book-item .bookItem-info-wrap .bookItem-price p .simbol {
+  padding-right: 7px;
+}
+.book-item .bookItem-info-wrap .bookItem-price p sup {
+  top: -0.1em;
+}
+.book-item .bookItem-info-wrap .bookItem-discount {
+  color: #838383;
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+.book-item .bookItem-info-wrap .bookItem-discount .saveMoney {
+  font-family: "SF-Pro-Bold", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+@media (min-width: 1200px) {
+  .book-item .bookItem-info-wrap .bookItem-discount .saveMoney {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0px;
+  }
+}
+.book-item .bookItem-info-wrap .bookItem-discount a {
+  color: #838383;
+  font-family: "SF-Pro-Bold", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-decoration: underline;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+@media (min-width: 1200px) {
+  .book-item .bookItem-info-wrap .bookItem-discount a {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0px;
+  }
+}
+.book-item .bookItem-info-wrap .bookItem-discount a:hover {
+  color: #005198;
+}
+@media (min-width: 1200px) {
+  .book-item .bookItem-info-wrap .bookItem-discount {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0px;
+  }
+}
+
+.bookItem-btns-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  padding: 0px 15px;
+}
+
+.btn-item-cipm {
+  background-color: #ffffff;
+  min-width: 150px;
+  text-align: center;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  border: 1px solid rgba(0, 81, 152, 0.1725490196);
+}
+.btn-item-cipm a {
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 20px 30px;
+  color: #005198;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.btn-item-cipm:hover {
+  background-color: #EEF1F6;
+  border: 1px solid #EEF1F6;
+}
+
+.btn-item--bkgBlueCorporativo {
+  background-color: #005198;
+}
+.btn-item--bkgBlueCorporativo a {
+  line-height: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.btn-item--bkgBlueCorporativo:hover {
+  background-color: #ffffff;
+  border: 1px solid #005198;
+}
+.btn-item--bkgBlueCorporativo:hover a {
+  color: #005198;
+}
+
+.pagination-cipm {
+  position: relative;
+  padding: 46px 0px 70px;
+}
+.pagination-cipm .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.pagination-cipm .pagination li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.pagination-cipm .pagination li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35px;
+  height: 35px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  background-color: rgba(0, 81, 152, 0.3);
+  border: 1px solid;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.pagination-cipm .pagination li a:hover:not(.active) {
+  background-color: #26314D;
+  border: 1px solid #26314D;
+  color: #FFF;
+}
+.pagination-cipm .pagination .prev, .pagination-cipm .pagination .next {
+  border-color: #005198;
+  background-color: #FFFFFF;
+}
+.pagination-cipm .pagination .prev .icon-pagination, .pagination-cipm .pagination .next .icon-pagination {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.pagination-cipm .pagination .prev .icon-pagination img, .pagination-cipm .pagination .next .icon-pagination img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.pagination-cipm .pagination .prev .icon-pagination .blue, .pagination-cipm .pagination .next .icon-pagination .blue {
+  opacity: 1;
+}
+.pagination-cipm .pagination .prev .icon-pagination .white, .pagination-cipm .pagination .next .icon-pagination .white {
+  opacity: 0;
+}
+.pagination-cipm .pagination .prev:hover .white, .pagination-cipm .pagination .next:hover .white {
+  opacity: 1;
+}
+.pagination-cipm .pagination .prev:hover .blue, .pagination-cipm .pagination .next:hover .blue {
+  opacity: 0;
+}
+.pagination-cipm .pagination .prev .icon-pagination img {
+  -webkit-transform: translate(-50%, -50%) rotate(180deg);
+          transform: translate(-50%, -50%) rotate(180deg);
+}
+.pagination-cipm .pagination .active {
+  background-color: #005198;
+  color: #FFFFFF;
+  border: 1px solid #005198;
+}
+
+.btn-enlace, .book-info-wrapper .options-books .option-viewBooks, .book-info-wrapper .options-books .option-backBook-icon {
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.btn-enlace a, .book-info-wrapper .options-books .option-viewBooks a, .book-info-wrapper .options-books .option-backBook-icon a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.text-basic, .book-info-wrapper .book-info .book-description .bookDescription-txt, .book-info-wrapper .book-info .book-description .bookDescription-editor, .book-info-wrapper .book-info .book-description .bookDescription-author {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.book-info-wrapper {
+  padding: 0 13px;
+}
+@media (min-width: 1200px) {
+  .book-info-wrapper {
+    padding: 0;
+  }
+}
+.book-info-wrapper .options-books {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #CCCCCC;
+  border-top: 1px solid #CCCCCC;
+  padding: 15px 0px 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (min-width: 768px) {
+  .book-info-wrapper .options-books {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 15px 0px;
+  }
+}
+.book-info-wrapper .options-books .option-backBook-icon {
+  /* width: 50%; */
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .book-info-wrapper .options-books .option-backBook-icon {
+    width: auto;
+    text-align: left;
+  }
+}
+.book-info-wrapper .options-books .option-backBook-icon a {
+  font-family: "SF-Pro-Bold";
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 29px;
+  width: auto;
+  gap: 12px;
+  color: #005198;
+  border-bottom: 1px solid #CCCCCC;
+}
+@media (min-width: 768px) {
+  .book-info-wrapper .options-books .option-backBook-icon a {
+    padding: 15px 29px 15px 0px;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: none;
+  }
+}
+.book-info-wrapper .options-books .option-backBook-icon a .icon-option {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.book-info-wrapper .options-books .option-backBook-icon a .icon-option img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.book-info-wrapper .options-books .option-backBook-icon a span {
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+.book-info-wrapper .options-books .option-viewBooks {
+  /* width: 50%; */
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .book-info-wrapper .options-books .option-viewBooks {
+    width: auto;
+    text-align: left;
+  }
+}
+.book-info-wrapper .options-books .option-viewBooks a {
+  font-family: "SF-Pro-Regular";
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #838383;
+  padding: 15px 29px;
+  width: auto;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .book-info-wrapper .options-books .option-viewBooks a {
+    padding: 15px 0px 15px 29px;
+  }
+}
+.book-info-wrapper .book-info {
+  padding-top: 30px;
+}
+.book-info-wrapper .book-info .bookSlider {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (min-width: 768px) {
+  .book-info-wrapper .book-info .bookSlider {
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .book-info-wrapper .book-info .bookSlider {
+    padding-bottom: 0;
+  }
+}
+.book-info-wrapper .book-info .bookSlider .bookSlider-inner {
+  width: 320px;
+}
+.book-info-wrapper .book-info .bookSlider .bookSlider-inner .carousel.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.book-info-wrapper .book-info .bookSlider .bookSlider-inner .carousel-indicators {
+  top: 100%;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  gap: 4px;
+  margin-top: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.book-info-wrapper .book-info .bookSlider .bookSlider-inner .carousel-indicators [data-bs-target] {
+  width: 70px;
+  height: 55px;
+  border: none;
+  margin-right: 0;
+  margin-left: 0;
+  opacity: 1;
+}
+.book-info-wrapper .book-info .bookSlider .bookSlider-inner .carousel-indicators button img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+.book-info-wrapper .book-info .bookSlider .bookSlider-inner .carousel-indicators .active img {
+  opacity: 0.4;
+}
+.book-info-wrapper .book-info .bookSlider .bookSlider-inner .carousel-inner .carousel-item {
+  height: 320px;
+  width: 320px;
+}
+.book-info-wrapper .book-info .bookSlider .bookSlider-inner .carousel-inner .carousel-item img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.book-info-wrapper .book-info .bookSlider .bookSlider-inner button.carousel-control-prev,
+.book-info-wrapper .book-info .bookSlider .bookSlider-inner button.carousel-control-next {
+  width: 23px;
+  height: 23px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 90%;
+  z-index: 100;
+}
+.book-info-wrapper .book-info .bookSlider .bookSlider-inner button.carousel-control-prev span.carousel-control-prev-icon,
+.book-info-wrapper .book-info .bookSlider .bookSlider-inner button.carousel-control-prev span.carousel-control-next-icon,
+.book-info-wrapper .book-info .bookSlider .bookSlider-inner button.carousel-control-next span.carousel-control-prev-icon,
+.book-info-wrapper .book-info .bookSlider .bookSlider-inner button.carousel-control-next span.carousel-control-next-icon {
+  height: 60%;
+  width: 60%;
+  background-position: initial;
+}
+.book-info-wrapper .book-info .bookSlider .bookSlider-inner button.carousel-control-prev .carousel-control-next-icon,
+.book-info-wrapper .book-info .bookSlider .bookSlider-inner button.carousel-control-next .carousel-control-next-icon {
+  background-image: url("../assets/iconos/icon-next.svg");
+}
+.book-info-wrapper .book-info .bookSlider .bookSlider-inner button.carousel-control-prev .carousel-control-prev-icon,
+.book-info-wrapper .book-info .bookSlider .bookSlider-inner button.carousel-control-next .carousel-control-prev-icon {
+  background-image: url("../assets/iconos/icon-prev.svg");
+}
+.book-info-wrapper .book-info .book-description {
+  padding: 25px 0;
+}
+@media (min-width: 768px) {
+  .book-info-wrapper .book-info .book-description {
+    padding: 0;
+  }
+}
+@media (min-width: 992px) {
+  .book-info-wrapper .book-info .book-description {
+    padding: 0 10px;
+  }
+}
+.book-info-wrapper .book-info .book-description .bookDescription-title {
+  color: #26314D;
+  font-family: "Georgia", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+}
+.book-info-wrapper .book-info .book-description .bookDescription-title h2 {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  margin-bottom: 15px;
+}
+.book-info-wrapper .book-info .book-description .bookDescription-author {
+  color: #838383;
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+.book-info-wrapper .book-info .book-description .bookDescription-author p {
+  margin-bottom: 8px;
+}
+.book-info-wrapper .book-info .book-description .bookDescription-editor {
+  color: #AAAAAA;
+  font-family: "SF-Pro-Italic", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+.book-info-wrapper .book-info .book-description .bookDescription-editor p {
+  margin-bottom: 20px;
+}
+.book-info-wrapper .book-info .book-description .bookDescription-txt {
+  color: #838383;
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  line-height: 20px;
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+.book-info-wrapper .book-info .book-description .bookDescription-txt a {
+  text-decoration: none;
+  color: #005198;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.book-info-wrapper .book-info .book-description .bookDescription-txt a:hover {
+  color: #838383;
+}
+.book-info-wrapper .book-info .book-description .bookDescription-txt h1, .book-info-wrapper .book-info .book-description .bookDescription-txt h2, .book-info-wrapper .book-info .book-description .bookDescription-txt h3, .book-info-wrapper .book-info .book-description .bookDescription-txt h4, .book-info-wrapper .book-info .book-description .bookDescription-txt h5, .book-info-wrapper .book-info .book-description .bookDescription-txt h6 {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  margin-bottom: 0px;
+}
+.book-info-wrapper .book-info .book-price-wrapper {
+  -webkit-box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.062745098);
+          box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.062745098);
+  padding: 20px 15px;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-overview-wrapper .book-tag {
+  font-family: "SF-Pro-Bold", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #11D120;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-overview-wrapper .book-cover {
+  font-family: "SF-Pro-Bold", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #005198;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-overview-wrapper .book-price {
+  font-family: "SF-Pro-Bold", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 38px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #005198;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-overview-wrapper .book-price .price-cant p {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-overview-wrapper .book-price .price-cant p .simbol {
+  padding-right: 7px;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-overview-wrapper .book-price .price-cant p sup {
+  top: -0.1em;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-overview-wrapper .book-price .book-coin {
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #838383;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-discountShipping {
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #838383;
+  padding: 15px 0;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-discountShipping .saveMoney {
+  font-family: "SF-Pro-Bold", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-discountShipping a {
+  color: #838383;
+  font-family: "SF-Pro-Bold", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  text-decoration: underline;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-discountShipping a:hover {
+  color: #005198;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-stock {
+  padding-top: 12px;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-stock form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-stock form label {
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #838383;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-stock form .selectCustom {
+  position: relative;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-stock form .selectCustom select {
+  background: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #DDDADA;
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  padding: 8px 9px;
+  width: 70px;
+  color: #838383;
+  margin: 10px 0;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-stock form .selectCustom select:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(221, 218, 218, 0.2);
+          box-shadow: 0 0 0 0.25rem rgba(221, 218, 218, 0.2);
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-stock form .selectCustom select:hover {
+  background-color: #ffffff;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-stock form .selectCustom select::-ms-expand {
+  display: none;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-stock form .selectCustom select option {
+  color: #838383;
+  font-size: 16px;
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-stock form .selectCustom select option:default {
+  color: white;
+  background-color: #EEF1F6;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-stock form .selectCustom .custom-arrow {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-stock form input {
+  background-color: #005198;
+  border: 1px solid #005198;
+  width: 100%;
+  color: #ffffff;
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  padding: 20px;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.book-info-wrapper .book-info .book-price-wrapper .book-stock form input:hover {
+  background-color: #ffffff;
+  color: #005198;
+}
+.book-info-wrapper .books-recommended .books-recommended-tittle {
+  color: #26314D;
+  font-family: "Georgia", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  padding: 40px 0;
+}
+.book-info-wrapper .books-recommended .books-recommended-tittle h3 {
+  font-size: 26px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.book-info.flex-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .book-info.flex-add {
+    gap: 30px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (min-width: 992px) {
+  .book-info.flex-add .bookSlider {
+    width: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  .book-info.flex-add .bookSlider {
+    width: 36%;
+  }
+}
+@media (min-width: 768px) {
+  .book-info.flex-add .book-description {
+    width: 65%;
+  }
+}
+@media (min-width: 992px) {
+  .book-info.flex-add .book-description {
+    width: 38%;
+  }
+}
+@media (min-width: 1200px) {
+  .book-info.flex-add .book-description {
+    width: 36%;
+    padding: 0 9px;
+  }
+}
+@media (min-width: 768px) {
+  .book-info.flex-add .book-price-wrapper {
+    width: 30%;
+  }
+}
+@media (min-width: 992px) {
+  .book-info.flex-add .book-price-wrapper {
+    width: 23%;
+  }
+}
+@media (min-width: 1200px) {
+  .book-info.flex-add .book-price-wrapper {
+    width: 22%;
+  }
+}
+
+/*======================================================================*
+    _variables
+*======================================================================*/
+/*======================================================================*
+    Mixing Media Query
+*======================================================================*/
+/*======================================================================*
+    Mixing Media Query Personalizado
+*======================================================================*/
+/*======================================================================*
+    Mixing Georgia Font
+*======================================================================*/
+/*======================================================================*
+    Mixing Georgia Font
+*======================================================================*/
+@media (min-width: 768px) {
+  .title-section-page {
+    padding-right: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .title-section-page {
+    padding-right: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .title-section-page {
+    padding-right: 34%;
+  }
+}
+.title-section-page .superindice-section {
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #26314D;
+}
+.title-section-page .superindice-section h5 {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  margin-bottom: 8px;
+}
+.title-section-page .title-section {
+  font-family: "Georgia-Bold", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #005198;
+}
+.title-section-page .title-section h2 {
+  font-size: 38px;
+  line-height: 43px;
+  letter-spacing: 0px;
+  margin-bottom: 13px;
+}
+.title-section-page .description-section {
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #26314D;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+.title-section-page .description-section h1, .title-section-page .description-section h2, .title-section-page .description-section h3, .title-section-page .description-section h4, .title-section-page .description-section h5, .title-section-page .description-section h6 {
+  font-family: "SF-Pro-Semibold", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+.title-section-page .description-section a {
+  color: #838383;
+  text-decoration: underline;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.title-section-page .description-section a:hover {
+  color: #26314D;
+}
+
+.btn-icon {
+  position: relative;
+  width: 100%;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  margin-top: 14px;
+}
+.btn-icon a {
+  color: #ffffff;
+  background-color: #0589FD;
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 135px;
+  width: auto;
+  gap: 20px;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  padding: 20px 18px;
+  cursor: pointer;
+}
+.btn-icon a span {
+  position: relative;
+  width: 100%;
+}
+.btn-icon a .icon-btn {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.btn-icon a .icon-btn img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+}
+.btn-icon a .icon-btn img.cian {
+  opacity: 0;
+}
+.btn-icon a .icon-btn img.white {
+  opacity: 1;
+}
+.btn-icon a:hover {
+  background-color: #ffffff;
+  color: #0589FD;
+  border: 1px solid #0589FD;
+}
+.btn-icon a:hover img.cian {
+  opacity: 1;
+}
+.btn-icon a:hover img.white {
+  opacity: 0;
+}
+
+.bkg-blue-corporativo a {
+  background-color: #005198;
+  /* img.blue{
+      opacity: 0;
+  } */
+}
+.bkg-blue-corporativo a:hover {
+  background-color: #ffffff;
+  color: #005198;
+  border: 1px solid #005198;
+}
+.bkg-blue-corporativo a:hover img.blue {
+  opacity: 1;
+}
+.bkg-blue-corporativo a:hover img.white {
+  opacity: 0;
+}
+.bkg-blue-corporativo a img.blue {
+  opacity: 0;
+}
+.bkg-blue-corporativo a img.white {
+  opacity: 1;
+}
+
+.events-blog {
+  padding: 0 13px;
+}
+@media (min-width: 1200px) {
+  .events-blog {
+    padding: 0;
+  }
+}
+.events-blog .artEventsBlog {
+  padding-top: 30px;
+}
+
+.eventBlog-target {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.eventBlog-target .target-image {
+  height: 232px;
+  width: 100%;
+  position: relative;
+}
+.eventBlog-target .target-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.eventBlog-target .target-date {
+  background-color: #0589FD;
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  padding: 12px 20px;
+}
+.eventBlog-target .target-date p {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 5px;
+}
+.eventBlog-target .target-date .date {
+  font-family: "SF-Pro-Bold", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0px;
+}
+.eventBlog-target .target-bkg-white {
+  -webkit-box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.1607843137);
+  padding: 15px 25px 15px 20px;
+}
+.eventBlog-target .target-bkg-white .target-fragment-wrapper {
+  color: #26314D;
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  margin-bottom: 14px;
+}
+@media (min-width: 768px) {
+  .eventBlog-target .target-bkg-white .target-fragment-wrapper {
+    font-size: 14px;
+  }
+}
+.eventBlog-target .target-bkg-white .target-fragment-wrapper .fragment-title h5 {
+  font-family: "Georgia-Bold", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 23px;
+  margin-bottom: 14px;
+}
+/*======================================================================*
+    _variables
+*======================================================================*/
+/*======================================================================*
+    Mixing Media Query
+*======================================================================*/
+/*======================================================================*
+    Mixing Media Query Personalizado
+*======================================================================*/
+/*======================================================================*
+    Mixing Georgia Font
+*======================================================================*/
+/*======================================================================*
+    Mixing Georgia Font
+*======================================================================*/
+/* .contenedor{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    @include tablet-xl{
+        max-width: 960px;
+    }
+    @include laptop{
+        max-width: 1020px;
+    }
+} */
+.banner_video--modalBoostrap {
+  width: 100%;
+  position: relative;
+}
+.banner_video--modalBoostrap .btn-close {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+}
+.banner_video--modalBoostrap .btn-close:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+}
+.banner_video--modalBoostrap .modal-dialog {
+  width: 95%;
+  margin: auto;
+  line-height: 0;
+}
+@media (min-width: 768px) {
+  .banner_video--modalBoostrap .modal-dialog {
+    max-width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .banner_video--modalBoostrap .modal-dialog {
+    max-width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .banner_video--modalBoostrap .modal-dialog {
+    max-width: 60%;
+  }
+}
+.banner_video--modalBoostrap iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+}
+@media (min-width: 768px) {
+  .banner_video--modalBoostrap iframe {
+    height: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .banner_video--modalBoostrap iframe {
+    height: 450px;
+  }
+}
+@media (min-width: 1600px) {
+  .banner_video--modalBoostrap iframe {
+    height: 650px;
+  }
+}
+.banner_video--modalBoostrap .modal-content {
+  background-color: transparent;
+  border: none;
+}
+.banner_video--modalBoostrap .modal--btnCerrar {
+  position: absolute;
+  /* right: 0; */
+  right: 1rem;
+  /* top: -75px; */
+  top: -50px;
+  background-color: rgba(38, 49, 77, 0.5);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.post-section {
+  padding: 0 13px;
+}
+@media (min-width: 1200px) {
+  .post-section {
+    padding: 0px;
+  }
+}
+.post-section .post-content {
+  margin-bottom: 45px;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .post-section .post-content {
+    padding: 0px 48px;
+  }
+}
+@media (min-width: 992px) {
+  .post-section .post-content .post-introduction {
+    padding-right: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .post-section .post-content .post-introduction {
+    padding-right: 30px;
+  }
+}
+.post-section .post-content .post-introduction .post-fecha {
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #323642;
+  margin: 15px 0;
+}
+.post-section .post-content .post-introduction .post-fecha h6 {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.32px;
+  margin: 0px;
+}
+.post-section .post-content .post-introduction .post-title {
+  font-family: "Georgia-Bold", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #0091E3;
+  margin: 15px 0;
+}
+.post-section .post-content .post-introduction .post-title h2 {
+  font-size: 44px;
+  line-height: 50px;
+  letter-spacing: 0px;
+  margin: 0px;
+}
+.post-section .post-content .post-introduction .post-subtitle {
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #3A434D;
+  margin: 15px 0;
+}
+.post-section .post-content .post-introduction .post-subtitle h4 {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.32px;
+  margin: 0px;
+}
+.post-section .post-content .post-event-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 32px 0;
+}
+@media (min-width: 768px) {
+  .post-section .post-content .post-event-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.post-section .post-content .post-event-wrapper .post-info-event {
+  width: 100%;
+  padding: 75px 15px;
+  background-color: #EEF1F6;
+}
+@media (min-width: 768px) {
+  .post-section .post-content .post-event-wrapper .post-info-event {
+    width: 50%;
+  }
+}
+.post-section .post-content .post-event-wrapper .post-info-event .event-info-title {
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #323642;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.32px;
+}
+.post-section .post-content .post-event-wrapper .post-info-event .event-info-title p {
+  margin-bottom: 20px;
+}
+.post-section .post-content .post-event-wrapper .post-info-event .event-date {
+  font-family: "SF-Pro-Bold", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #A0A4A9;
+  font-size: 27px;
+  line-height: 33px;
+  letter-spacing: 0px;
+  margin: 8px 0;
+}
+.post-section .post-content .post-event-wrapper .post-info-event .event-date p {
+  margin-bottom: 0px;
+}
+.post-section .post-content .post-event-wrapper .post-info-event .event-date p span {
+  color: #0589FD;
+}
+.post-section .post-content .post-event-wrapper .post-info-event .event-schedule {
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #A0A4A9;
+  font-size: 27px;
+  line-height: 33px;
+  letter-spacing: 0px;
+  margin: 8px 0;
+}
+.post-section .post-content .post-event-wrapper .post-info-event .event-schedule p {
+  margin-bottom: 0px;
+}
+.post-section .post-content .post-event-wrapper .post-info-event .event-schedule p span {
+  color: #26314D;
+}
+.post-section .post-content .post-event-wrapper .post-info-event .event-place {
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #A0A4A9;
+  font-size: 27px;
+  line-height: 33px;
+  letter-spacing: 0px;
+  margin: 8px 0;
+}
+.post-section .post-content .post-event-wrapper .post-info-event .event-place p {
+  margin-bottom: 0px;
+}
+.post-section .post-content .post-event-wrapper .post-info-event .event-place p span {
+  color: #26314D;
+}
+.post-section .post-content .post-event-wrapper .post-modal-event {
+  width: 100%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+  height: 378px;
+}
+@media (min-width: 768px) {
+  .post-section .post-content .post-event-wrapper .post-modal-event {
+    width: 50%;
+    height: auto;
+  }
+}
+.post-section .post-content .post-event-wrapper .post-modal-event::after {
+  background-color: rgba(19, 110, 185, 0.7);
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.post-section .post-content .post-event-wrapper .post-modal-event .modal-btnPlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  z-index: 100;
+}
+.post-section .post-content .post-event-wrapper .post-modal-event .modal-btnPlay a {
+  display: block;
+  height: 100%;
+}
+.post-section .post-content .post-event-wrapper .post-modal-event .modal-btnPlay a img {
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.post-section .post-content .post-description {
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #3A434D;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.32px;
+}
+.post-section .post-content .post-description img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 340px;
+  margin: 20px 0;
+}
+@media (min-width: 768px) {
+  .post-section .post-content .post-description img {
+    height: 470px;
+  }
+}
+@media (min-width: 992px) {
+  .post-section .post-content .post-description img {
+    height: 570px;
+  }
+}
+@media (min-width: 1200px) {
+  .post-section .post-content .post-description img {
+    height: 670px;
+  }
+}
+@media (min-width: 1600px) {
+  .post-section .post-content .post-description img {
+    height: 770px;
+  }
+}
+.post-section .post-content .post-description .highlightedText {
+  width: 90%;
+  font-family: "Georgia", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.52px;
+  background-color: #26314D;
+  padding: 35px 50px;
+  border-radius: 16px;
+  text-align: center;
+  margin: 50px auto;
+}
+.post-section .post-content .post-description p {
+  margin: 1rem 0px;
+}
+.post-section .post-content .post-description ul {
+  margin: 1rem 0px;
+}
+.post-section .post-content .post-description ul li::marker {
+  color: #0091E3;
+}
+.post-section .post-content .post-description h1, .post-section .post-content .post-description h2, .post-section .post-content .post-description h3 {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0.32px;
+  margin: 1rem 0px;
+}
+.post-section .post-content .post-description h4, .post-section .post-content .post-description h5, .post-section .post-content .post-description h6 {
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.32px;
+  margin: 1rem 0px;
+}
+.post-section .post-content .post-description a {
+  color: #0091E3;
+  text-decoration: none;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.post-section .post-content .post-description a:hover {
+  color: #3A434D;
+}
+
+.otherPosts {
+  padding: 0 13px;
+}
+@media (min-width: 1200px) {
+  .otherPosts {
+    padding: 0px;
+  }
+}
+.otherPosts .otherPost-inner {
+  padding-top: 25px;
+  border-top: 1px solid rgba(38, 49, 77, 0.24);
+}
+.otherPosts .otherPost-inner .morePost-title {
+  color: #005198;
+  font-family: "SF-Pro-Bold", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  padding: 30px 0;
+}
+.otherPosts .otherPost-inner .morePost-title h3 {
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0px;
+}
+.otherPosts .otherPost-inner .morePosts-carousel .owl-theme .owl-nav {
+  margin-top: 0px;
+  /* right: 0;
+  position: absolute; */
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  margin: 0px;
+  padding-top: 42px;
+}
+@media (min-width: 768px) {
+  .otherPosts .otherPost-inner .morePosts-carousel .owl-theme .owl-nav {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+.otherPosts .otherPost-inner .morePosts-carousel .owl-theme .owl-nav [class*=owl-] {
+  padding: 0px 7px;
+  background: transparent;
+  margin: 0px;
+}
+.otherPosts .otherPost-inner .morePosts-carousel .owl-theme .owl-dots {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 40px;
+}
+@media (min-width: 768px) {
+  .otherPosts .otherPost-inner .morePosts-carousel .owl-theme .owl-dots {
+    width: 50%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+.otherPosts .otherPost-inner .morePosts-carousel .owl-theme .owl-dots .owl-dot span {
+  background: #005198;
+}
+.otherPosts .otherPost-inner .morePosts-carousel .owl-theme .owl-dots .owl-dot.active span, .otherPosts .otherPost-inner .morePosts-carousel .owl-theme .owl-dots .owl-dot:hover span {
+  background: #26314D;
+}
+.otherPosts .otherPost-inner .morePosts-btn {
+  margin: 40px 0;
+  text-align: center;
+}
+
+/*======================================================================*
+    _variables
+*======================================================================*/
+/*======================================================================*
+    Mixing Media Query
+*======================================================================*/
+/*======================================================================*
+    Mixing Media Query Personalizado
+*======================================================================*/
+/*======================================================================*
+    Mixing Georgia Font
+*======================================================================*/
+/*======================================================================*
+    Mixing Georgia Font
+*======================================================================*/
+.aviso-privacidad {
+  padding: 0 13px;
+}
+@media (min-width: 1200px) {
+  .aviso-privacidad {
+    padding: 0px;
+  }
+}
+.aviso-privacidad .aviso-privacidad-inner {
+  margin-bottom: 45px;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .aviso-privacidad .aviso-privacidad-inner {
+    padding: 0px 48px;
+  }
+}
+.aviso-privacidad .aviso-privacidad-inner .aviso-titulos {
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .aviso-privacidad .aviso-privacidad-inner .aviso-titulos {
+    padding-right: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .aviso-privacidad .aviso-privacidad-inner .aviso-titulos {
+    padding-right: 46%;
+  }
+}
+@media (min-width: 1200px) {
+  .aviso-privacidad .aviso-privacidad-inner .aviso-titulos {
+    padding-right: 50%;
+  }
+}
+.aviso-privacidad .aviso-privacidad-inner .aviso-titulos .aviso-superindice {
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #323642;
+  margin: 15px 0;
+}
+.aviso-privacidad .aviso-privacidad-inner .aviso-titulos .aviso-superindice h6 {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.32px;
+  margin: 0;
+}
+.aviso-privacidad .aviso-privacidad-inner .aviso-titulos .aviso-titulo {
+  font-family: "Georgia-Bold", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #0091E3;
+  margin: 15px 0 20px;
+}
+.aviso-privacidad .aviso-privacidad-inner .aviso-titulos .aviso-titulo h2 {
+  font-size: 44px;
+  line-height: 50px;
+  letter-spacing: 0px;
+  margin: 0px;
+}
+.aviso-privacidad .aviso-privacidad-inner .aviso-titulos .aviso-subtitulo {
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #3A434D;
+  padding-right: 40px;
+  margin: 15px 0;
+}
+.aviso-privacidad .aviso-privacidad-inner .aviso-titulos .aviso-subtitulo h4 {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.32px;
+  margin-bottom: 0px;
+}
+@media (min-width: 768px) {
+  .aviso-privacidad .aviso-privacidad-inner .aviso-titulos .aviso-subtitulo {
+    padding-right: 0;
+  }
+}
+.aviso-privacidad .aviso-privacidad-inner .aviso-description {
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #3A434D;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.32px;
+}
+.aviso-privacidad .aviso-privacidad-inner .aviso-description p {
+  margin: 1rem 0px;
+}
+.aviso-privacidad .aviso-privacidad-inner .aviso-description ul {
+  margin: 1rem 0px;
+}
+.aviso-privacidad .aviso-privacidad-inner .aviso-description ul li::marker {
+  color: #0091E3;
+}
+.aviso-privacidad .aviso-privacidad-inner .aviso-description h1, .aviso-privacidad .aviso-privacidad-inner .aviso-description h2, .aviso-privacidad .aviso-privacidad-inner .aviso-description h3 {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0.32px;
+  margin: 1rem 0px;
+}
+.aviso-privacidad .aviso-privacidad-inner .aviso-description h4, .aviso-privacidad .aviso-privacidad-inner .aviso-description h5, .aviso-privacidad .aviso-privacidad-inner .aviso-description h6 {
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.32px;
+  margin: 1rem 0px;
+}
+.aviso-privacidad .aviso-privacidad-inner .aviso-description a {
+  color: #0091E3;
+  text-decoration: none;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.aviso-privacidad .aviso-privacidad-inner .aviso-description a:hover {
+  color: #3A434D;
+}
+
+/*======================================================================*
+    _variables
+*======================================================================*/
+/*======================================================================*
+    Mixing Media Query
+*======================================================================*/
+/*======================================================================*
+    Mixing Media Query Personalizado
+*======================================================================*/
+/*======================================================================*
+    Mixing Georgia Font
+*======================================================================*/
+/*======================================================================*
+    Mixing Georgia Font
+*======================================================================*/
+.styleBase, .target-content .list-content ul li .itemList, .target-content .list-content ul li, .target-title-inner-circles-bkg, .member-target .target-title .title-title, .member-target .target-title .icon-title, .member-target .target-title, .member-target {
+  width: 100%;
+  position: relative;
+}
+
+.btns-container {
+  padding: 0px 10px;
+}
+.btns-container .btn-item-cipm {
+  background-color: #005198;
+}
+.btns-container .btn-item-cipm a {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.btns-container .btn-item-cipm:hover {
+  background-color: #ffffff;
+  border: 1px solid #005198;
+}
+.btns-container .btn-item-cipm:hover a {
+  color: #005198;
+}
+.btns-container .bkg-white a {
+  width: 100%;
+  text-transform: none;
+}
+.btns-container .bkg-white a span {
+  width: auto;
+}
+
+.bkg-white a {
+  background-color: #ffffff;
+  color: #005198;
+  border: 1px solid #D1CAE3;
+}
+.bkg-white a:hover {
+  background-color: #EEF1F6;
+  color: #005198;
+  border: 1px solid #EEF1F6;
+}
+
+/* Opciones de cambio para los tipos de miembro, debe de cambiar encabezado, checks que son rutas de imagen, y botones */
+/* .member-target.target--blue{
+    .target-title{
+        &::after{
+            @include after;
+            background: rgb(1,72,179);
+            background: linear-gradient(10deg, rgba(1,72,179,1) 0%, rgba(5,142,250,0.6671918767507004) 100%);
+        }
+    } 
+    .btns-container{
+        .btn-item-cipm{
+
+        }
+    }
+} */
+.members-types {
+  padding: 0 13px;
+}
+@media (min-width: 1200px) {
+  .members-types {
+    padding: 0;
+  }
+}
+.members-types .members-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 50px;
+}
+
+.member-target {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* overflow: hidden; */
+  margin-bottom: 25px;
+  /* margin-bottom: 50px; */
+}
+@media (min-width: 768px) {
+  .member-target {
+    width: 47.7%;
+  }
+}
+@media (min-width: 992px) {
+  .member-target {
+    width: 31%;
+  }
+}
+@media (min-width: 1200px) {
+  .member-target {
+    width: 31.5%;
+  }
+}
+.member-target .target-title {
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+  overflow: hidden;
+}
+.member-target .target-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background: rgb(1, 72, 179);
+  background: linear-gradient(10deg, rgb(1, 72, 179) 0%, rgba(5, 142, 250, 0.6671918768) 100%);
+}
+.member-target .target-title::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  left: -25%;
+}
+.member-target .target-title .icon-title {
+  z-index: 100;
+  padding-bottom: 15px;
+  width: 50px;
+  height: 50px;
+}
+.member-target .target-title .icon-title img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.member-target .target-title .title-title {
+  z-index: 100;
+  font-family: "Georgia-Bold", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #ffffff;
+}
+.member-target .target-title .title-title h5 {
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+
+.target-title-inner-circles-bkg {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 30px;
+}
+.target-title-inner-circles-bkg::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  left: 0;
+  top: 70%;
+  z-index: 20;
+}
+.target-title-inner-circles-bkg::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  left: -18%;
+  top: 22%;
+  z-index: 20;
+}
+
+.target-content {
+  background-color: white;
+  padding: 20px 15px 30px 20px;
+  -webkit-box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.098);
+  box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.098);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.target-content .content-title {
+  font-family: "Georgia", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #26314D;
+  padding-bottom: 25px;
+}
+.target-content .content-title h6 {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  margin-bottom: 0;
+}
+.target-content .list-content ul {
+  padding: 0;
+}
+.target-content .list-content ul li {
+  list-style: none;
+}
+.target-content .list-content ul li .itemList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 8px;
+}
+.target-content .list-content ul li .itemList .iconItem {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+.target-content .list-content ul li .itemList .iconItem img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.target-content .list-content ul li .itemList .textItem {
+  width: 95%;
+  font-family: "SF-Pro-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+  color: #005198;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0px;
+}
+.target-content .list-content ul li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  border-left: 1px solid #005198;
+  left: 9px;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.member-target.target--purple .target-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background: rgb(49, 24, 149);
+  background: linear-gradient(10deg, rgb(49, 24, 149) 0%, rgba(188, 9, 191, 0.6307773109) 100%);
+}
+.member-target.target--purple .target-content .content-title {
+  color: #441190;
+}
+.member-target.target--purple .target-content .list-content .textItem {
+  color: #331086;
+}
+.member-target.target--purple .target-content .list-content li:not(:last-child)::after {
+  border-left: 1px solid #2F1082;
+}
+.member-target.target--purple .btn-item-cipm {
+  background-color: #2F1082;
+}
+.member-target.target--purple .btn-item-cipm:hover {
+  background-color: #ffffff;
+  border: 1px solid #2F1082;
+}
+.member-target.target--purple .btn-item-cipm:hover a {
+  color: #2F1082;
+}
+.member-target.target--purple .btn-icon.bkg-white a {
+  background-color: #ffffff;
+  color: #2F1082;
+  border: 1px solid #D1CAE3;
+}
+.member-target.target--purple .btn-icon.bkg-white a:hover {
+  background-color: rgba(47, 16, 130, 0.2);
+  color: #2F1082;
+  border: 1px solid rgba(47, 16, 130, 0);
+}
+
+.member-target.target--yellow .target-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background: rgb(113, 81, 23);
+  background: linear-gradient(10deg, rgb(113, 81, 23) 0%, rgba(99, 211, 56, 0.6363795518) 100%);
+}
+.member-target.target--yellow .target-content .content-title {
+  color: #414B03;
+}
+.member-target.target--yellow .target-content .list-content .textItem {
+  color: #6E6918;
+}
+.member-target.target--yellow .target-content .list-content li:not(:last-child)::after {
+  border-left: 1px solid #6E6918;
+}
+.member-target.target--yellow .btn-item-cipm {
+  background-color: #6E6918;
+}
+.member-target.target--yellow .btn-item-cipm:hover {
+  background-color: #ffffff;
+  border: 1px solid #6E6918;
+}
+.member-target.target--yellow .btn-item-cipm:hover a {
+  color: #6E6918;
+}
+.member-target.target--yellow .btn-icon.bkg-white a {
+  background-color: #ffffff;
+  color: #6E6918;
+  border: 1px solid #D1CAE3;
+}
+.member-target.target--yellow .btn-icon.bkg-white a:hover {
+  background-color: rgba(110, 105, 24, 0.3);
+  color: #6E6918;
+  border: 1px solid rgba(110, 105, 24, 0);
+}
+
+/*======================================================================*
+Variables //
+*======================================================================*/
+/*======================================================================*
+    _variables
+*======================================================================*/
+/*======================================================================*
+Mixings //
+*======================================================================*/
+/*======================================================================*
+    Mixing Media Query
+*======================================================================*/
+/*======================================================================*
+    Mixing Media Query Personalizado
+*======================================================================*/
+/*======================================================================*
+    Mixing Georgia Font
+*======================================================================*/
+/*======================================================================*
+    Mixing Georgia Font
+*======================================================================*/

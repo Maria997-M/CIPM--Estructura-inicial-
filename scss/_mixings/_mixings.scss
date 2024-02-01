@@ -1,0 +1,123 @@
+
+@mixin center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin antialiased{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+@mixin after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+@mixin background{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin resetSelect{
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+/*======================================================================*
+    Mixing Media Query
+*======================================================================*/
+
+@mixin mobile {
+    @media (min-width: 320px){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin tablet-xl {
+    @media (min-width: 992px){
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: 1200px){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1600px){
+        @content;
+    }
+}
+
+/*======================================================================*
+    Mixing Media Query Personalizado
+*======================================================================*/
+
+@mixin mediaquery($width) {
+    @media (min-width: #{$width}){
+        @content;
+    }
+}
+
+/*======================================================================*
+    Mixing Georgia Font
+*======================================================================*/
+
+@mixin Georgia-Bold {
+    font-family: 'Georgia-Bold', "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+}
+
+@mixin Georgia-Italic {
+    font-family: 'Georgia-Italic', "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+}
+
+@mixin Georgia {
+    font-family: 'Georgia', "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+}
+
+/*======================================================================*
+    Mixing Georgia Font
+*======================================================================*/
+
+@mixin SF-Pro-Bold {
+    font-family: 'SF-Pro-Bold', "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+}
+
+@mixin SF-Pro-Light {
+    font-family: 'SF-Pro-Light', "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+}
+
+@mixin SF-Pro-Medium {
+    font-family: 'SF-Pro-Medium', "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+}
+
+@mixin SF-Pro-Regular {
+    font-family: 'SF-Pro-Regular', "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+}
+
+@mixin SF-Pro-Italic {
+    font-family: 'SF-Pro-Italic', "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+}
+
+@mixin SF-Pro-Semibold {
+    font-family: 'SF-Pro-Semibold', "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", Arial, serif, sans-serif;
+}

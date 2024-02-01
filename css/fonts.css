@@ -1,0 +1,89 @@
+
+/*======================================================================*
+    Georgia Font
+*======================================================================*/
+
+@font-face {
+  font-family: 'Georgia-Bold';
+  src: url(../fonts/Georgia/Georgia-Bold/Georgia-Bold.eot);
+  src: url(../fonts/Georgia/Georgia-Bold/Georgia-Bold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/Georgia/Georgia-Bold/Georgia-Bold.otf) format('otf'),
+       url(../fonts/Georgia/Georgia-Bold/Georgia-Bold.woff) format('woff'),
+       url(../fonts/Georgia/Georgia-Bold/Georgia-Bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Georgia-Italic';
+  src: url(../fonts/Georgia/Georgia-Italic/Georgia-Italic.eot);
+  src: url(../fonts/Georgia/Georgia-Italic/Georgia-Italic.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/Georgia/Georgia-Italic/Georgia-Italic.otf) format('otf'),
+       url(../fonts/Georgia/Georgia-Italic/Georgia-Italic.woff) format('woff'),
+       url(../fonts/Georgia/Georgia-Italic/Georgia-Italic.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url(../fonts/Georgia/Georgia-Regular/Georgia.eot);
+  src: url(../fonts/Georgia/Georgia-Regular/Georgia.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/Georgia/Georgia-Regular/Georgia.otf) format('otf'),
+       url(../fonts/Georgia/Georgia-Regular/Georgia.woff) format('woff'),
+       url(../fonts/Georgia/Georgia-Regular/Georgia.woff2) format('woff2');
+}
+
+/*======================================================================*
+    SF-Pro Font
+*======================================================================*/
+
+@font-face {
+  font-family: 'SF-Pro-Bold';
+  src: url(../fonts/SF-Pro-Text/SF-Pro-Text-Bold/SF-Pro-Text-Bold.eot);
+  src: url(../fonts/SF-Pro-Text/SF-Pro-Text-Bold/SF-Pro-Text-Bold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/SF-Pro-Text/SF-Pro-Text-Bold/SF-Pro-Text-Bold.otf) format('otf'),
+       url(../fonts/SF-Pro-Text/SF-Pro-Text-Bold/SF-Pro-Text-Bold.woff) format('woff'),
+       url(../fonts/SF-Pro-Text/SF-Pro-Text-Bold/SF-Pro-Text-Bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Light';
+  src: url(../fonts/SF-Pro-Text/SF-Pro-Text-Light/SF-Pro-Text-Light.eot);
+  src: url(../fonts/SF-Pro-Text/SF-Pro-Text-Light/SF-Pro-Text-Light.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/SF-Pro-Text/SF-Pro-Text-Light/SF-Pro-Text-Light.otf) format('otf'),
+       url(../fonts/SF-Pro-Text/SF-Pro-Text-Light/SF-Pro-Text-Light.woff) format('woff'),
+       url(../fonts/SF-Pro-Text/SF-Pro-Text-Light/SF-Pro-Text-Light.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Medium';
+  src: url(../fonts/SF-Pro-Text/SF-Pro-Text-Medium/SF-Pro-Text-Medium.eot);
+  src: url(../fonts/SF-Pro-Text/SF-Pro-Text-Medium/SF-Pro-Text-Medium.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/SF-Pro-Text/SF-Pro-Text-Medium/SF-Pro-Text-Medium.otf) format('otf'),
+       url(../fonts/SF-Pro-Text/SF-Pro-Text-Medium/SF-Pro-Text-Medium.woff) format('woff'),
+       url(../fonts/SF-Pro-Text/SF-Pro-Text-Medium/SF-Pro-Text-Medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Regular';
+  src: url(../fonts/SF-Pro-Text/SF-Pro-Text-Regular/SF-Pro-Text-Regular.eot);
+  src: url(../fonts/SF-Pro-Text/SF-Pro-Text-Regular/SF-Pro-Text-Regular.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/SF-Pro-Text/SF-Pro-Text-Regular/SF-Pro-Text-Regular.otf) format('otf'),
+       url(../fonts/SF-Pro-Text/SF-Pro-Text-Regular/SF-Pro-Text-Regular.woff) format('woff'),
+       url(../fonts/SF-Pro-Text/SF-Pro-Text-Regular/SF-Pro-Text-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Italic';
+  src: url(../fonts/SF-Pro-Text/SF-Pro-Text-RegularItalic/SF-Pro-Text-RegularItalic.eot);
+  src: url(../fonts/SF-Pro-Text/SF-Pro-Text-RegularItalic/SF-Pro-Text-RegularItalic.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/SF-Pro-Text/SF-Pro-Text-RegularItalic/SF-Pro-Text-RegularItalic.otf) format('otf'),
+       url(../fonts/SF-Pro-Text/SF-Pro-Text-RegularItalic/SF-Pro-Text-RegularItalic.woff) format('woff'),
+       url(../fonts/SF-Pro-Text/SF-Pro-Text-RegularItalic/SF-Pro-Text-RegularItalic.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Semibold';
+  src: url(../fonts/SF-Pro-Text/SF-Pro-Text-Semibold/SF-Pro-Text-Semibold.eot);
+  src: url(../fonts/SF-Pro-Text/SF-Pro-Text-Semibold/SF-Pro-Text-Semibold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/SF-Pro-Text/SF-Pro-Text-Semibold/SF-Pro-Text-Semibold.otf) format('otf'),
+       url(../fonts/SF-Pro-Text/SF-Pro-Text-Semibold/SF-Pro-Text-Semibold.woff) format('woff'),
+       url(../fonts/SF-Pro-Text/SF-Pro-Text-Semibold/SF-Pro-Text-Semibold.woff2) format('woff2');
+}

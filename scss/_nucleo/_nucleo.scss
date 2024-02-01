@@ -1,0 +1,67 @@
+@import "_variables/_variables";
+@import "_mixings/_mixings";
+
+/*=========================================================================
+    _variables CSS
+*=========================================================================*/
+
+:root{
+    // Default
+    --white:#ffffff;
+    --black:#000000;
+
+    // Corporativo
+    --dark-blue-corporativo:#26314D;
+    --light-blue-corporativo: #005198;
+    --green-corporativo: #26B105;
+
+    // Texto
+    --dark-gray-texto: #000000E5;
+    --light-blue-texto: #ABC5DD;
+    --light-gray-texto: #7C8294;
+
+    //Backgrounds
+    --light-blue-background: #EEF1F6;
+}
+
+/*=========================================================================
+    _nucleo
+*=========================================================================*/
+
+.noPadding {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+.noMargin {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+button, a{
+    cursor: pointer;
+}
+
+// a,
+// div,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// li,
+// p,
+// span {
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+//     text-rendering: optimizeLegibility;
+// }
+
+body{
+    //Añadir la fuente primaria
+}
+
+.overflow{
+    overflow:hidden;
+}

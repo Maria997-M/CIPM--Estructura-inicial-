@@ -1,0 +1,114 @@
+@import "_variables/_variables";
+@import "_mixings/_mixings";
+//////////////////////////////////////////////////////
+/// 
+/// PANTALLA AVISOS
+/// By María Felegrino
+/// 
+////////////////////////////////////////////////////// 
+
+.aviso-privacidad{
+    padding: 0 13px;
+    @include laptop{
+        padding: 0px;
+    }
+    .aviso-privacidad-inner{
+        margin-bottom: 45px;
+        width: 100%;
+        @include laptop{
+            padding: 0px 48px;
+        }
+        .aviso-titulos{
+            margin-bottom: 24px;
+            @include tablet{
+                padding-right: 20%;
+            }
+            @include tablet-xl{
+                padding-right: 46%;
+            }
+            @include laptop{
+                padding-right: 50%;
+            }
+            .aviso-superindice{
+                @include SF-Pro-Regular;
+                color: $black-blue-txt;
+                margin: 15px 0;
+                h6{
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0.32px;
+                    margin: 0;
+                }
+            }
+            .aviso-titulo{
+                @include Georgia-Bold;
+                color: $cian-txt;
+                margin: 15px 0 20px;
+                h2{
+                    font-size: 44px;
+                    line-height: 50px;
+                    letter-spacing: 0px;
+                    margin:0px;
+                }
+            }
+            .aviso-subtitulo{
+                @include SF-Pro-Regular;
+                color: $black-blue-txt-sub;
+                padding-right: 40px;
+                margin: 15px 0;
+                h4{
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0.32px;
+                    margin-bottom: 0px;
+                }
+                @include tablet{
+                    padding-right: 0
+                }
+            }
+
+
+        }
+        .aviso-description{
+            
+            @include SF-Pro-Regular;
+            color: $black-blue-txt-sub;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.32px;
+            p{
+                margin: 1rem 0px;
+
+            }
+            ul{
+                margin: 1rem 0px;
+                li{
+                    &::marker{
+                        color: $cian-txt;
+                    }
+
+                }
+            }
+            h1,h2,h3{
+                font-size: 28px;
+                line-height: 32px;
+                letter-spacing: 0.32px;
+                margin: 1rem 0px;
+            }
+            h4,h5,h6{
+                font-size: 22px;
+                line-height: 26px;
+                letter-spacing: 0.32px;
+                margin: 1rem 0px;
+            }
+            a{
+                color: $cian-txt;
+                text-decoration: none;
+                transition: all ease .3s;
+                &:hover{
+                    color: $black-blue-txt-sub;
+                }
+            }
+        }
+    }
+}

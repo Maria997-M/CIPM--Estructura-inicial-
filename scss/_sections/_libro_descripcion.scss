@@ -1,0 +1,480 @@
+//////////////////////////////////////////////////////
+/// 
+/// PANTALLA LIBRO INDIVIDUAL
+/// By María Felegrino
+/// 
+////////////////////////////////////////////////////// 
+.btn-enlace{
+    transition: all ease .3s;
+    a{
+        text-decoration: none;
+        cursor: pointer;  
+    }
+    
+}
+.text-basic{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.book-info-wrapper{
+    padding: 0 13px;
+    @include laptop{
+        padding: 0;
+    }
+    .options-books{
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $gray-border-light;
+        border-top:  1px solid $gray-border-light;
+        padding: 15px 0px 0px;
+
+        flex-direction: column;
+        @include tablet{
+            flex-direction: row;
+            padding:15px 0px;
+        }
+    
+        .option-backBook-icon{
+            /* width: 50%; */
+            width: 100%;
+            text-align: center;
+            @extend.btn-enlace;
+            @include tablet{
+                width: auto;
+                text-align: left;
+            }
+            a{
+                font-family: 'SF-Pro-Bold';
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0px;
+                display: inline-flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 29px;
+                width: auto;
+                gap:12px;
+                color: $light-blue-corporativo;
+                border-bottom: 1px solid $gray-border-light;
+                @include tablet{
+                    padding: 15px 29px 15px 0px;
+                    border-right: 1px solid $gray-border-light;
+                    border-bottom: none;
+                }
+               
+                .icon-option{
+                    width: 20px;
+                    height: 20px;
+                    display: flex;
+                    img{
+                        width: 100%;   
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+                span{
+                    position: relative;
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+        }
+        .option-viewBooks{
+            /* width: 50%; */
+            width: 100%;
+            text-align: center;
+            @extend.btn-enlace;
+            @include tablet{
+                width: auto;
+                text-align: left;
+            }
+            a{
+                font-family: 'SF-Pro-Regular';
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0px;
+                color: $gray-txt;
+                padding: 15px 29px;
+                width: auto;
+                display: inline-block;
+                @include tablet{
+                    padding: 15px 0px 15px 29px;
+                }
+            }
+        }
+
+    }
+    .book-info{
+        padding-top: 30px;
+        
+        .bookSlider{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            @include tablet{
+                padding-bottom: 30px;
+            }
+            @include tablet-xl{
+                padding-bottom: 0;
+            }
+            .bookSlider-inner{
+                width: 320px;
+                .carousel.slide{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .carousel-indicators{
+                    top: 100%;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    margin-left: 0;
+                    margin-right: 0;
+                    margin-bottom: 0;
+                    gap: 4px;
+                    margin-top: 30px;
+                    justify-content: space-between;
+                    position: relative;
+                    order: 2;
+                    [data-bs-target]{
+                        width: 70px;
+                        height: 55px;
+                        border: none;
+                        margin-right: 0;
+                        margin-left: 0;
+                        opacity: 1;
+                    }
+                    button{
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                            display: block;
+                        }
+                    }
+                    .active{
+                        img{
+                            opacity: 0.4;
+                        }
+                    }
+
+                }
+                .carousel-inner{
+                    .carousel-item{
+                        height: 320px;
+                        width: 320px;
+                        img{
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+                button.carousel-control-prev,
+                button.carousel-control-next{
+                    width: 23px;
+                    height: 23px;
+                    background-color: $white;
+                    border-radius: 50%;
+                    opacity: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    top: 90%;
+                    z-index: 100;
+                    span.carousel-control-prev-icon,
+                    span.carousel-control-next-icon{
+                        
+                        height: 60%;
+                        width: 60%;
+                        background-position:initial;
+
+                    }
+                    .carousel-control-next-icon {
+                        background-image: url("../assets/iconos/icon-next.svg");
+                    }
+                    .carousel-control-prev-icon{
+                        background-image: url("../assets/iconos/icon-prev.svg");
+                    }
+                }
+            }
+
+        }
+        .book-description{
+            padding: 25px 0;
+            @include tablet{
+                padding: 0;
+            }
+            @include tablet-xl{
+                padding: 0 10px;
+            }
+            .bookDescription-title{
+                color: $dark-blue-corporativo;
+                @include Georgia;
+                h2{
+                    
+                    font-size: 32px;
+                    line-height: 40px;
+                    letter-spacing: 0px;
+                    margin-bottom: 15px
+                }
+            }
+            .bookDescription-author{
+                @extend.text-basic;
+                color: $gray-txt;
+                @include SF-Pro-Regular;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0px;
+                p{
+                    margin-bottom: 8px;
+                }
+
+            }
+            .bookDescription-editor{
+                @extend.text-basic;
+                color: $gray-txt-secundary;
+                @include SF-Pro-Italic;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0px;
+                p{
+                    margin-bottom: 20px;
+                }
+
+            }
+            .bookDescription-txt{
+                @extend.text-basic;
+                color: $gray-txt;
+                @include SF-Pro-Regular;
+                line-height: 20px;
+                font-size: 14px;
+                letter-spacing: 0px;
+                a{
+                    text-decoration: none;
+                    color: $light-blue-corporativo;
+                    transition: all ease .3s;
+                    &:hover{
+                        color: $gray-txt;
+                    }
+                }
+                h1,h2,h3,h4,h5,h6{
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: 0px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        .book-price-wrapper{
+            box-shadow: 0px 3px 25px #00000010;
+            padding: 20px 15px;
+            .book-overview-wrapper{
+                .book-tag{
+                    @include SF-Pro-Bold;
+                    font-size: 18px;
+                    line-height: 20px;
+                    letter-spacing: 0px;
+                    color: $stock-tag;
+                }
+                .book-cover{
+                    @include SF-Pro-Bold;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 0px;
+                    color: $light-blue-corporativo;
+                }
+                .book-price{
+                    @include SF-Pro-Bold;
+                    font-size: 38px;
+                    line-height: 20px;
+                    letter-spacing: 0px;
+                    color: $light-blue-corporativo;
+                    .price-cant{
+                        p{
+                        display: inline-flex;
+                        flex-direction: row;
+                        align-items: center;
+                            .simbol{
+                                padding-right: 7px;
+                            }
+                            sup{
+                            top: -0.1em;
+                            }
+                        }
+                    }
+                    .book-coin{
+                        @include SF-Pro-Regular;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 0px;
+                        color: $gray-txt;
+                    }
+                }
+            }
+            .book-discountShipping{
+                border-top: 1px solid $dark-gray-border;
+                border-bottom: 1px solid $dark-gray-border;
+                @include SF-Pro-Regular;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0px;
+                color: $gray-txt;
+                padding: 15px 0;
+                .saveMoney{
+                    @include SF-Pro-Bold;
+                }
+                a{
+                    color: $gray-txt;
+                    @include SF-Pro-Bold;
+                    text-decoration: underline;
+                    transition: all ease .3s;
+                    &:hover{
+                        color: $light-blue-corporativo;
+                    }
+                }
+            }
+            .book-stock{
+                padding-top: 12px;
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    label{
+                        @include SF-Pro-Regular;
+                        font-size:14px;
+                        line-height:20px;
+                        letter-spacing: 0px;
+                        color: $gray-txt;
+                    }
+                    .selectCustom{
+                        position: relative;
+                        select{
+                            background: transparent;
+                            appearance: none;
+                            border: 1px solid $outline-select;
+                            @include SF-Pro-Regular;
+                            font-size: 16px;
+                            line-height: 20px;
+                            letter-spacing: 0px;
+                            padding: 8px 9px;
+                            width: 70px;
+                            color: $gray-txt;
+                            margin:10px 0;
+                            &:focus{
+                                outline: none;
+                                box-shadow: 0 0 0 0.25rem transparentize($color: $outline-select, $amount: 0.8);
+                            }
+                            &:hover{
+                                background-color: $white;
+                            }
+                            &::-ms-expand{
+                                display: none;
+                            }
+    
+                            option{
+                                color: $gray-txt;
+                                font-size: 16px;  
+                                @include SF-Pro-Regular;
+                            }
+                            
+                            option:default {
+                                color: white;
+                                background-color: $light-blue-background;
+                            }
+                        }
+                        .custom-arrow {
+                            position: absolute;
+                            top: 50%;
+                            right: 5px;
+                            transform: translateY(-50%);
+                            width: 20px;
+                            height: 20px;
+                            pointer-events: none;
+                          }
+
+                    }
+                    
+                    input{
+                        background-color: $light-blue-corporativo;
+                        border: 1px solid $light-blue-corporativo;
+                        width: 100%;
+                        color: $white;
+                        @include SF-Pro-Regular;
+                        font-size: 14px;
+                        line-height: 16px;
+                        letter-spacing: 0px;
+                        text-transform: uppercase;
+                        padding: 20px;
+                        transition: all ease .3s;
+                        &:hover{
+                            background-color: $white;
+                            color: $light-blue-corporativo;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .books-recommended{
+        .books-recommended-tittle{
+            color: $dark-blue-corporativo;
+            @include Georgia;
+            padding: 40px 0;
+            h3{
+                font-size: 26px;
+                line-height: 20px;
+                letter-spacing: 0px;
+            }
+        }
+    }
+}
+
+.book-info.flex-add{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    @include tablet{
+        gap: 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .bookSlider{
+        @include tablet-xl{
+            width: 30%;
+        }
+        @include laptop{
+            width: 36%;
+        }
+
+    }
+    .book-description{
+        @include tablet{
+            width: 65%;
+        }
+        @include tablet-xl{
+            width: 38%;
+        }
+        @include laptop{
+            width: 36%;
+            padding: 0 9px;
+
+        }
+
+    }
+    .book-price-wrapper{
+        @include tablet{
+            width: 30%;
+        }
+        @include tablet-xl{
+            width: 23%;
+        }
+        @include laptop{
+            width: 22%;
+        }
+    }
+}

@@ -1,0 +1,226 @@
+@import "_variables/_variables";
+@import "_mixings/_mixings";
+//////////////////////////////////////////////////////
+/// 
+/// PANTALLA EVENTOS
+/// By María Felegrino
+/// 
+////////////////////////////////////////////////////// 
+.title-section-page{
+    @include tablet{
+        padding-right: 20%;
+    }
+    @include tablet-xl{
+        padding-right: 25%;
+    }
+    @include laptop{
+        padding-right: 34%;
+    }
+    
+    .superindice-section{
+        @include SF-Pro-Regular;
+        color: $dark-blue-corporativo;
+        h5{
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0px;
+            margin-bottom: 8px;
+        }
+
+    }
+    .title-section{
+        @include Georgia-Bold;
+        color: $light-blue-corporativo;
+        h2{
+            font-size: 38px;
+            line-height: 43px;
+            letter-spacing: 0px;
+            margin-bottom: 13px;
+        }
+
+    }
+    .description-section{
+        @include SF-Pro-Regular;
+        color: $dark-blue-corporativo;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        h1,h2,h3,h4,h5,h6{
+            @include SF-Pro-Semibold;
+            font-size: 16px;
+            line-height:20px;
+            letter-spacing:0px;
+            margin-bottom: .5rem;
+            margin-top: 1rem;
+        }
+        a{
+            color: $gray-txt;
+            text-decoration: underline;
+            transition: all ease .3s;
+            &:hover{
+                color: $dark-blue-corporativo;
+            }
+        }
+        
+    }
+}
+.btn-icon{
+    position: relative;
+    width: 100%;
+    transition: all ease .3s;
+    margin-top: 14px;
+    a{
+        color: $white;
+        background-color: $cian-background;
+        @include SF-Pro-Regular;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0px;
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        min-width: 135px;
+        width: auto;
+        gap: 20px;
+        text-decoration: none;
+        justify-content: center;
+        text-transform: uppercase;
+        padding: 20px 18px;
+        cursor: pointer;
+        span{
+            position: relative;
+            width: 100%;
+        }
+        .icon-btn{
+            width: 20px;
+            height: 20px;
+            display: flex;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                position: absolute;
+            }
+            img.cian{
+                opacity: 0;
+            }
+            img.white{
+                opacity: 1;
+            }
+        }
+        &:hover{
+            background-color: $white;
+            color: $cian-background;
+            border: 1px solid $cian-background;
+            img.cian{
+                opacity: 1;
+            }
+            img.white{
+                opacity: 0;
+            }
+        }
+    }
+}
+.bkg-blue-corporativo{
+    a{
+        background-color: $light-blue-corporativo;
+        &:hover{
+            background-color: $white;
+            color: $light-blue-corporativo;
+            border: 1px solid $light-blue-corporativo;
+            img.blue{
+                opacity: 1;
+            }
+            img.white{
+                opacity: 0;
+            }
+        }
+
+            /* img.blue{
+                opacity: 0;
+            } */
+            img.blue {
+                opacity: 0;
+            }
+            img.white{
+                opacity: 1;
+            }
+        
+    }
+}
+.events-blog{
+    padding: 0 13px;
+    @include laptop{
+        padding: 0;
+    }
+    .artEventsBlog{
+        padding-top: 30px;
+    }
+}
+.eventBlog-target{
+    width: 100%;
+    margin-bottom: 40px;
+    .target-image{
+        height: 232px;
+        width: 100%;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .target-date{
+        background-color: $cian-background;
+        @include SF-Pro-Regular;
+        color: $white;
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 0px;
+        padding: 12px 20px;
+        p{
+            color:  transparentize($color: $white, $amount: 0.25);
+            margin-bottom: 5px;
+        }
+        .date{
+            @include SF-Pro-Bold;
+            color: $white;
+            font-size: 20px;
+            line-height: 22px;
+            letter-spacing: 0px;
+
+        }
+    }
+    .target-bkg-white{
+        box-shadow: 0px 3px 35px #00000029;
+        padding: 15px 25px 15px 20px;
+        .target-fragment-wrapper{
+            color: $dark-blue-corporativo;
+            @include SF-Pro-Regular;
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: 0px;
+            margin-bottom: 14px;
+            @include tablet{
+                font-size: 14px;
+            }
+            .fragment-title{
+                h5{
+                    @include Georgia-Bold;
+                    font-size: 18px;
+                    letter-spacing: 0px;
+                    line-height: 23px;
+                    margin-bottom: 14px;
+                }      
+
+            }
+            .target-fragment{
+                
+            }
+        }
+    }
+    
+}
+
