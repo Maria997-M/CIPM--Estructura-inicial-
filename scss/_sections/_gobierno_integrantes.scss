@@ -1,0 +1,56 @@
+@import "_variables/_variables";
+@import "_mixings/_mixings";
+//////////////////////////////////////////////////////
+/// 
+/// PANTALLA AVISOS
+/// 
+////////////////////////////////////////////////////// 
+
+
+.integrantes{
+    .integrantes-inner{
+        .integrante-item{
+            .integrante-img{
+
+            }
+            .integrante-infoWrap{
+                .integrante-informacion{
+                    .integrante-txt{
+                        .txt-superindice{
+                            color: $dark-blue-corporativo;
+                            @include SF-Pro-Regular;
+                            h6{
+                                font-size: 16px;
+                                line-height: 19px;
+                                letter-spacing: 0px;
+                            }
+                        }
+                        .txt-titulo{
+                            @include Georgia-Bold;
+                            color: $light-blue-corporativo;
+                            h3{
+                                letter-spacing: 0px;
+                                line-height: 35px;
+                                font-size: 30px;
+                            }
+
+                        }
+                        .txt-descripcion{
+                            @include SF-Pro-Regular;
+                            color: $dark-blue-corporativo;
+                            font-size: 14px;
+                            line-height: 16px;
+                            letter-spacing: 0px;
+
+                        }
+                        .btns-container{
+
+                        }
+                        
+                    }
+
+                }
+            }
+        }
+    }
+}
