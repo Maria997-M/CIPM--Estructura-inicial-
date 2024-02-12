@@ -1,0 +1,26 @@
+@import "_variables/_variables";
+@import "_mixings/_mixings";
+//////////////////////////////////////////////////////
+/// 
+/// PANTALLA FUNCIONES Y PERSPECTIVAS
+/// 
+////////////////////////////////////////////////////// 
+
+.functions-perspectives{
+    .functions-perspectives-inner{
+        display: flex;
+        .functions-left-carousel{
+            width: 50%;
+            
+
+        }
+        .functions-info-right{
+            width: 50%;
+
+        }
+    }
+}
+
+.carousel--bullets-imgs{
+
+}
