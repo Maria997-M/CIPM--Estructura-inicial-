@@ -6,16 +6,140 @@
 /// 
 ////////////////////////////////////////////////////// 
 
+/* .title-section-page{
+    margin-bottom: 50px;
+} */
 
 .integrantes{
+    padding: 0 13px;
+    @include tablet{
+        padding: 0;
+    }
+    .container-fluid{
+
+        @include tablet{
+            padding-right: 0;
+            padding-left: 0
+        }
+    }
     .integrantes-inner{
+        /* padding-top: 50px; */
         .integrante-item{
+            @include styleBase;
+            margin-bottom: 50px;
+            @include tablet{
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 70px
+            }
+            @include laptop{
+                margin-bottom: 0;
+                display: flex;
+                align-self: stretch;
+            }
             .integrante-img{
+                @include styleBase;
+                @include background;
+                height: 370px;
+                @include tablet{
+                    width: 60%;
+                    position: absolute;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
+                @include laptop{
+                    position: relative;
+                    top: auto;
+                    left: auto;
+                    width: 50%;
+                    min-height: 570px;
+                    display: flex;
+                    flex-grow: 1;
+                    height: auto;
+                }
+                .carousel{
+                    height: 100%;
+                    width: 100%;
+                    .carousel-inner{
+                        height: 100%;
+                        .carousel-item{
+                            height: 100%;
+                            img{
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: center;
+                            }
+                        }
+                    }
+                    .carousel-control-prev,
+                    .carousel-control-next{
+                        height: 55px;
+                        width: 55px;
+                        top: auto;
+                        bottom: 0;
+                        opacity: 1;
+                    }
+                    .carousel-control-next{
+                        background-color: $dark-blue-corporativo;
+                        right: 0;
+                        @include tablet{
+                            left: 55px;
+                        }
+                    }
+                    .carousel-control-prev{
+                        background-color: $cian-background;
+                        left: 70%;
+                        @include tablet{
+                            left: 0;
+                        }
+                    }
+                }
+                
 
             }
             .integrante-infoWrap{
+                z-index: 10;
+                @include tablet{
+                    position: relative;
+                    top: auto;
+                    padding: 50px 0;
+                    width: 68%;
+                    padding-right: 34px;
+                }
+                @include tablet-xl{
+                    padding: 100px 0;
+                    padding-right: 50px;
+                    margin-left: auto;
+                }
+                @include laptop{
+                    padding: 0;
+                    width: 50%;
+                }
                 .integrante-informacion{
+                    @include styleBase;
+                    padding: 50px 30px;
+                    background-color: $light-blue-background;
+                    @include tablet{
+                        background-color: transparentize($color: $light-blue-background, $amount: 0.2);
+                        backdrop-filter: blur(10px);
+                        padding: 50px;
+                    }
+                    @include tablet-xl{
+                        padding: 100px;
+                    }
+                    @include laptop{
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        padding: 100px 100px 100px 80px;
+                    }
+                    @include desktop{
+                        padding: 100px 312px 100px 120px;
+                    }
                     .integrante-txt{
+                        @include styleBase;
                         .txt-superindice{
                             color: $dark-blue-corporativo;
                             @include SF-Pro-Regular;
@@ -41,9 +165,30 @@
                             font-size: 14px;
                             line-height: 16px;
                             letter-spacing: 0px;
-
-                        }
-                        .btns-container{
+                            h1,h2,h3{
+                                font-size: 20px;
+                                line-height: 24px;
+                                letter-spacing: 0px;
+                            }
+                            h4,h5,h6{
+                                font-size: 18px;
+                                line-height: 22px;
+                                letter-spacing: 0px;
+                            }
+                            li{
+                                &::marker{
+                                    color: $cian-txt;
+                                }
+            
+                            }
+                            a{
+                                color: $cian-txt;
+                                text-decoration: none;
+                                transition: all ease .3s;
+                                &:hover{
+                                    color: $black-blue-txt-sub;
+                                }
+                            }
 
                         }
                         
@@ -52,5 +197,86 @@
                 }
             }
         }
+    }
+}
+.btns-container--inline{
+    display: flex;
+    flex-wrap: wrap;
+    @include tablet{
+        gap: 10px;
+    }
+    .btn-icon{
+        @include tablet{
+            width: auto;
+        }
+        a{
+            width: 100%;
+            text-transform: none;
+            @include tablet{
+                width: auto;
+            }
+        }
+        
+        
+    }
+    .bkg-light-blue{
+        a{
+            background-color: $light-blue-background;
+            color: $light-blue-corporativo;
+            border: 1px solid $gray-border-btn;
+            transition: all ease .3s;
+            &:hover{
+                background-color: transparentize($color: $white, $amount: 0.5);
+                border: 1px solid transparentize($color: $white, $amount: 0.5);
+            }
+        }
+    }
+
+}
+.reverse{
+    .integrante-item:nth-child(odd){
+            flex-direction: row-reverse;
+            .integrante-img{
+                left: auto;
+                right: 0;
+                .carousel{
+                    .carousel-control-next{
+                        @include tablet{
+                            right: 0;
+                            left: auto;
+                        }
+                    }
+                    .carousel-control-prev{
+                        @include tablet{
+                            right: 55px;
+                            left: auto;
+                        }
+                    }
+                }
+                
+            }
+            .integrante-infoWrap{
+                @include tablet{
+                    padding-right: 0;
+                    padding-left: 34px;
+                }
+                @include tablet-xl{
+                    margin-left: 0;
+                    margin-right: auto;
+                    padding-right: 0;
+                    padding-left: 50px;
+                }
+                @include laptop{
+                    padding-left: 0;
+                }
+                .integrante-informacion{
+                    @include laptop{
+                        padding: 100px 40px 100px 140px;
+                    }
+                    @include desktop{
+                        padding: 100px 100px 100px 312px;
+                    }
+                }
+            }
     }
 }

@@ -52,7 +52,7 @@
                 display: inline-flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 15px 29px;
+                padding: 30px;
                 width: auto;
                 gap:12px;
                 color: $light-blue-corporativo;
@@ -95,7 +95,7 @@
                 line-height: 20px;
                 letter-spacing: 0px;
                 color: $gray-txt;
-                padding: 15px 29px;
+                padding: 30px;
                 width: auto;
                 display: inline-block;
                 @include tablet{
@@ -112,8 +112,10 @@
             align-items: center;
             display: flex;
             justify-content: center;
+            align-self: center;
             @include tablet{
                 padding-bottom: 30px;
+                order: 1;
             }
             @include tablet-xl{
                 padding-bottom: 0;
@@ -171,29 +173,49 @@
                 }
                 button.carousel-control-prev,
                 button.carousel-control-next{
-                    width: 23px;
-                    height: 23px;
+                    width: 40px;
+                    height: 40px;
                     background-color: $white;
                     border-radius: 50%;
                     opacity: 1;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    top: 90%;
+                    top: 88%;
                     z-index: 100;
+                    border: 1px solid $gray-txt;
+                    @include tablet{
+                        width: 23px;
+                        height: 23px;
+                        top: 90%;
+                        border: none;
+                    }
                     span.carousel-control-prev-icon,
                     span.carousel-control-next-icon{
                         
                         height: 60%;
                         width: 60%;
                         background-position:initial;
-
                     }
+                    
                     .carousel-control-next-icon {
                         background-image: url("../assets/iconos/icon-next.svg");
                     }
+                    
                     .carousel-control-prev-icon{
                         background-image: url("../assets/iconos/icon-prev.svg");
+                    }
+                }
+                .carousel-control-next {
+                    right: -5%;
+                    @include tablet{
+                        right: 0;
+                    }
+                }
+                .carousel-control-prev {
+                    left: -5%;
+                    @include tablet{
+                        left: 0;
                     }
                 }
             }
@@ -203,9 +225,11 @@
             padding: 25px 0;
             @include tablet{
                 padding: 0;
+                order:3;
             }
             @include tablet-xl{
                 padding: 0 10px;
+                order: 2;
             }
             .bookDescription-title{
                 color: $dark-blue-corporativo;
@@ -268,6 +292,12 @@
         .book-price-wrapper{
             box-shadow: 0px 3px 25px #00000010;
             padding: 20px 15px;
+            @include tablet{
+                order: 2;
+            }
+            @include tablet-xl{
+                order: 3;
+            }
             .book-overview-wrapper{
                 .book-tag{
                     @include SF-Pro-Bold;
@@ -443,6 +473,9 @@
         flex-wrap: wrap;
     }
     .bookSlider{
+        @include tablet{
+            width: 65%;
+        }
         @include tablet-xl{
             width: 30%;
         }
@@ -453,7 +486,8 @@
     }
     .book-description{
         @include tablet{
-            width: 65%;
+            /* width: 65%; */
+            width: 100%;
         }
         @include tablet-xl{
             width: 38%;

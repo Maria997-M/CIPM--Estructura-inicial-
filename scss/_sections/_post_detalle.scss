@@ -140,10 +140,13 @@
             }
             .post-info-event{
                 width: 100%;
-                padding: 75px 15px;
+                padding: 35px 15px;
                 background-color: $light-blue-background;
                 @include tablet{
                     width: 50%;
+                }
+                @include laptop{
+                    padding: 75px 15px;
                 }
                 .event-info-title{
                     @include SF-Pro-Regular;
@@ -159,8 +162,8 @@
                 .event-date{
                     @include SF-Pro-Bold;
                     color: $light-gray-txt-event;
-                    font-size: 27px;
-                    line-height: 33px;
+                    font-size: 22px;
+                    line-height: 1.4;
                     letter-spacing: 0px;
                     margin: 8px 0;
                     p{
@@ -170,12 +173,15 @@
 
                         }
                     }
+                    @include laptop{
+                        font-size: 27px;
+                    }
                 }
                 .event-schedule{
                     @include SF-Pro-Regular;
                     color: $light-gray-txt-event;
-                    font-size: 27px;
-                    line-height: 33px;
+                    font-size: 22px;
+                    line-height: 1.4;
                     letter-spacing: 0px;
                     margin: 8px 0;
                     p{
@@ -185,12 +191,15 @@
 
                         }
                     }
+                    @include laptop{
+                        font-size: 27px;
+                    }
                 }
                 .event-place{
                     @include SF-Pro-Regular;
                     color: $light-gray-txt-event;
-                    font-size: 27px;
-                    line-height: 33px;
+                    font-size: 22px;
+                    line-height: 1.4;
                     letter-spacing: 0px;
                     margin: 8px 0;
                     p{
@@ -199,6 +208,9 @@
                             color: $dark-blue-corporativo;
 
                         }
+                    }
+                    @include laptop{
+                        font-size: 27px;
                     }
                 }
             }

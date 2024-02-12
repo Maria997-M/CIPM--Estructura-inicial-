@@ -6,6 +6,7 @@
 /// 
 ////////////////////////////////////////////////////// 
 .title-section-page{
+    margin-bottom: 50px;
     @include tablet{
         padding-right: 20%;
     }
@@ -85,6 +86,7 @@
         justify-content: center;
         text-transform: uppercase;
         padding: 20px 18px;
+        transition: all ease .3s;
         cursor: pointer;
         span{
             position: relative;
@@ -154,7 +156,7 @@
         padding: 0;
     }
     .artEventsBlog{
-        padding-top: 30px;
+        /* padding-top: 30px; */
     }
 }
 .eventBlog-target{
